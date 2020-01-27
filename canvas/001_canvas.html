@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>canvas</title>
+	<script type="text/javascript" src="Modernizr-2.0.6.js"></script>
+	<script type="text/javascript">
+		function draw() {
+			if (!Modernizr.canvas) return;
+
+			var canvas = document.getElementById('canvas');
+			var context = canvas.getContext('2d');
+
+			context.beginPath();
+			context.moveTo(0, 0);
+			context.lineTo(100, 1000);
+
+			context.stroke();
+		}
+
+		if (window.addEventListener) window.addEventListener('load', draw, true);
+	</script>
+</head>
+<body>
+	<canvas id="canvas" height="300" width="300" style="border: solid 1px black;">
+		Браузер не поддерживает Canvas
+	</canvas>
+</body>
+</html>
