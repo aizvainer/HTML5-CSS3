@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web worker</title>
+	<script type="text/javascript">
+		var worker = new Worker('task.js');
+
+		worker.addEventListener('message', function (e) {
+			document.getElementById('output').innerHTML += "Stream answer: " + e.data;
+		}, true);
+
+		worker.postMessage('Hello world');
+	</script>
+</head>
+<body>
+	<div id="output"></div>
+</body>
+</html>

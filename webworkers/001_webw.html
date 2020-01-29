@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>workers support</title>
+	<script type="text/javascript">
+		window.addEventListener('load', function () {
+			if (typeof Worker !== 'undefined') {
+				document.getElementById('support').innerHTML = "Browser supports HTML5 Web Workers";
+			}
+			else {
+				document.getElementById('support').innerHTML = "Browser doesn't support HTML5 Web Workers";
+			}
+		}, false);
+	</script>
+</head>
+<body>
+	<div id="support"></div>
+</body>
+</html>

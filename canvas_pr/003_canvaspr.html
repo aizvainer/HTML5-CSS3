@@ -26,7 +26,7 @@
 			}
 
 			f(callback);
-		}
+		};
 
 		function drawRectangle(rect, context) {
 			context.beginPath();
@@ -56,6 +56,7 @@
 			requestFrame(function () {
 				animate(rect, canvas, context, startTime);
 			});
+		}
 
 			var canvas = document.getElementById('myCanvas');
 			var context = canvas.getContext('2d');
@@ -70,7 +71,7 @@
 
 			drawRectangle(rect, context);
 			animate(rect, canvas, context, new Date().getTime());
-		}
+		
 	</script>
 </body>
 </html>
