@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		input[type="checkbox"] {
+			background: url(switch.png);
+			height: 26px;
+			width: 32px;
+			cursor: pointer;
+			
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+
+			input[type="checkbox"]:checked {
+				background-position: 0 -26px;
+			}
+
+		div {
+			-moz-appearance:button;
+			-webkit-appearance:button;
+			appearance:button;
+
+			width: 75px;
+			padding: 10px
+		}
+	</style>
+</head>
+<body>
+	<p>Click a switch</p>
+	<p>
+		<input type="checkbox">
+	</p>
+	<p>
+		<input type="checkbox" checked="checked">
+	</p>
+	<p>
+		<input type="checkbox">
+	</p>
+
+	<div>This is div</div>
+
+	<a href="http://htmlbook.ru/blog/stilnye-chekkboksy-ne-dlya-vsekh">HTMLBook</a>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		input[type=text]:optional {
+			border: 2px dashed grey;
+		}
+
+		input:required {
+			border: 2px dashed red;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<p>Please enter your name</p>
+		<p>
+			Name:
+			<input type="text">
+		</p>
+		<p>
+			Age:
+			<input type="number" min="18" required="required" title="Enter your name">
+		</p>
+		<p>
+			<input type="submit" value="Submit">
+		</p>
+	</form>
+</body>
+</html>
