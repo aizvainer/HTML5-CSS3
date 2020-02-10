@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div {
+			width: 600px;
+			height: 389px;
+			padding: 10px;
+			margin: 10px;
+			color: red;
+			background-image: url(photo.jpg);
+
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+			div.class1 {
+				filter: grayscale(100%);
+				-webkit-filter: grayscale(100%);
+			}
+
+			div.class2 {
+				filter: grayscale(50%);
+				-webkit-filter: grayscale(50%);
+			}
+
+			div.class3 {
+				filter: sepia(100%);
+				-webkit-filter: sepia(100%);
+			}
+
+			div.class4 {
+				filter: sepia(100%) grayscale(50%);
+				-webkit-filter: sepia(100%) grayscale(50%);
+			}
+
+			div.class5 {
+				filter: saturate(3);
+				-webkit-filter: saturate(3);
+			}
+
+			div.class6 {
+				filter: blur(2px);
+				-webkit-filter: blur(2px);
+			}
+
+			div.class7 {
+				filter: contrast(200%);
+				-webkit-filter: contrast(200%);
+			}
+
+			div.class8 {
+				filter: brightness(2);
+				-webkit-filter: brightness(2);
+			}
+
+			div.class9 {
+				filter: hue-rotate(270deg);
+				-webkit-filter: hue-rotate(270deg);
+			}
+
+			div.class10 {
+				filter: invert(100%);
+				-webkit-filter: invert(100%);
+			}
+
+			div.class11 {
+				filter: opacity(0.5);
+				-webkit-filter: opacity(0.5);
+			}
+	</style>
+</head>
+<body>
+	<div>Original</div>
+
+	<div class="class1">grayscale(100%)</div>
+	<div class="class2">grayscale(50%)</div>
+	<div class="class3">sepia(100%)</div>
+	<div class="class4">sepia(100%) grayscale(50%)</div>
+	<div class="class5">saturate(3)</div>
+	<div class="class6">blur(2px)</div>
+	<div class="class7">contrast(100%)</div>
+	<div class="class8">brightness(2)</div>
+	<div class="class9">hue-rotate(270deg)</div>
+	<div class="class10">invert(100%)</div>
+	<div class="class11">opacity(0.5)</div>
+</body>
+</html>

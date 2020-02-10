@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.card {
+			transform-style: preserve-3d;
+			-webkit-transform-style: preserve-3d;
+		}
+
+		.back, .front {
+			position: absolute;
+			width: 272px;
+			height: 380px;
+
+			-moz-transition: all 1.8s;
+			-o-transition: all 1.8s;
+			-webkit-transition: all 1.8s;
+			transition: all 1.8s;
+		}
+
+		.back {
+			background-image: url(back.jpg);
+		}
+
+		.front {
+			background-image: url(front.jpg);
+
+			-webkit-transform: rotate3d(0,1,0, 180deg);
+			-o-transform: rotate3d(0,1,0, 180deg);
+			-ms-transform: rotate3d(0,1,0, 180deg);
+			-moz-transform: rotate3d(0,1,0, 180deg);
+			transform: rotate3d(0,1,0, 180deg);
+		}
+
+		.card:hover .back {
+			-webkit-transform: rotate3d(0,1,0, 180deg);
+			-o-transform: rotate3d(0,1,0, 180deg);
+			-ms-transform: rotate3d(0,1,0, 180deg);
+			-moz-transform: rotate3d(0,1,0, 180deg);
+			transform: rotate3d(0,1,0, 180deg);
+		}
+
+		.card:hover .font {
+			-webkit-transform: rotate3d(0,1,0, 0deg);
+			-o-transform: rotate3d(0,1,0, 0deg);
+			-ms-transform: rotate3d(0,1,0, 0deg);
+			-moz-transform: rotate3d(0,1,0, 0deg);
+			transform: rotate3d(0,1,0, 0deg);
+		}
+
+		.backface .back, .backface .font {
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="card backface">
+		<div class="back"></div>
+		<div class="front"></div>
+	</div>
+</body>
+</html>
